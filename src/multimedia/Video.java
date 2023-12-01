@@ -1,21 +1,27 @@
 package multimedia;
 
 import java.util.Scanner;
+//Player Classe Padre (molto comoda u.u);
 
 public class Video extends Player {
 
 
     Scanner luce=new Scanner(System.in);
 
-    public int luminosita=5;
+    public int luminosita=5;//<-- usata per dare un default alla luminosità;
 
 
     public int video(){
         System.out.println("il volume è regolato a " + audio + "\n");
-        System.out.println("vuoi regolare la luminosità? 1 aumenta 2 diminuisci "+ luminosita +"premi invio per continuare" );
+
+        System.out.println("vuoi regolare la luminosità? 1 aumenta 2 diminuisci e"+"premi invio per continuare" );
         luce.nextLine();
+        //^^scanner utilizzato per fare più spazio anche se in altri ho usato anche il nextLine \n;
+
+        //Video è il figo di turno collega il tutto;
 
          aumentaLuminosita(4);
+
          diminusiciLuminosita(2);
 
 
@@ -29,6 +35,8 @@ public class Video extends Player {
     }
     public int aumentaLuminosita(int aumento){
         this.luminosita=aumento;
+        //Aumenta e Abbassa luminosità si basano sullo stesso fenomeno del volume;
+
         if (luminosita!=5){
             ++aumento;
             System.out.println( "la luminosità è stata aumentata a "+ aumento + "\n");
@@ -40,6 +48,7 @@ public class Video extends Player {
 
     public int diminusiciLuminosita(int diminuire){
         this.luminosita=diminuire;
+
         if (luminosita!=5){
             --diminuire;
             System.out.println("la luminosità è stata abbassata a  "+ diminuire + "\n");

@@ -17,10 +17,12 @@ public class Player {
          Scanner pla=new Scanner(System.in);
 
          System.out.println("premi play per sentire (invio)");
-         System.out.println( "\n l'audio dura un  "+ durata + "  secondo/i" );
+
+         System.out.println( "l'audio dura un  "+ durata + "  secondo/i" );
+
          pla.nextLine();
 
-         System.out.println("inizio video/audio");
+         System.out.println("inizio video/audio \n");
 
          alzaVolume(39);
 
