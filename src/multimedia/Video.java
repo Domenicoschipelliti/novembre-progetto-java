@@ -11,8 +11,8 @@ public class Video extends Player {
 
 
     public int video(){
-        System.out.println("il volume è regolato a " + audio);
-        System.out.println("vuoi regolare la luminosità? 1 aumenta 2 diminuisci "+ luminosita);
+        System.out.println("il volume è regolato a " + audio + "\n");
+        System.out.println("vuoi regolare la luminosità? 1 aumenta 2 diminuisci "+ luminosita +"premi invio per continuare" );
         luce.nextLine();
 
          aumentaLuminosita(4);
@@ -31,7 +31,7 @@ public class Video extends Player {
         this.luminosita=aumento;
         if (luminosita!=5){
             ++aumento;
-            System.out.println( "la luminosità è stata aumentata a "+ aumento);
+            System.out.println( "la luminosità è stata aumentata a "+ aumento + "\n");
         }else {
             System.out.println("la luminosità è 5 di default");
         }
@@ -42,7 +42,7 @@ public class Video extends Player {
         this.luminosita=diminuire;
         if (luminosita!=5){
             --diminuire;
-            System.out.println("la luminosità è stata abbassata a  "+ diminuire);
+            System.out.println("la luminosità è stata abbassata a  "+ diminuire + "\n");
         }else {
             System.out.println("il volume è 50 di default");
         }

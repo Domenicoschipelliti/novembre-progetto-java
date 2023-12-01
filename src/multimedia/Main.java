@@ -11,7 +11,7 @@ public class Main {
 
         pl.play(4);
 
-        re.ripetere("tito");
+        re.ripetere("titolo: perennemente stanco \n");
 
         video.video();
 

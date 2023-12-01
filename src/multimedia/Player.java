@@ -16,8 +16,8 @@ public class Player {
 
          Scanner pla=new Scanner(System.in);
 
-         System.out.println("premi play per sentire");
-         System.out.println( "l'audio dura un  "+ durata + "  secondo/i" );
+         System.out.println("premi play per sentire (invio)");
+         System.out.println( "\n l'audio dura un  "+ durata + "  secondo/i" );
          pla.nextLine();
 
          System.out.println("inizio video/audio");
@@ -39,7 +39,7 @@ public class Player {
         this.audio=aumento;
         if (audio!=50){
             ++aumento;
-           System.out.println( "Il tuo volume è stato alzato a  "+ aumento);
+           System.out.println( "Il tuo volume è stato alzato a  "+ aumento + "\n");
         }else {
            System.out.println("il volume è 50 di default");
         }
@@ -50,7 +50,7 @@ public class Player {
         this.audio=diminuire;
         if (audio!=50){
             --diminuire;
-            System.out.println("Il tuo volume è stato abbassato a  "+ diminuire);
+            System.out.println("Il tuo volume è stato abbassato a  "+ diminuire + "\n");
         }else {
             System.out.println("il volume è 50 di default");
         }

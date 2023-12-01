@@ -7,7 +7,6 @@ public class RegistrazioneAudio extends Player{
 
        public String ripetere(String ri){
            this.titolo=ri;
-           System.out.println(titolo.length());
 
            if (titolo.length()<=durata){
                   System.out.println("! "+ ri);
