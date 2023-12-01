@@ -27,7 +27,7 @@ public class Player {
          abbassaVolume(25);
 
 
-         System.out.println("fine audio/video");
+
 
         return durata;
 
